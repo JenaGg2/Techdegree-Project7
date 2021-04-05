@@ -4,10 +4,7 @@
   .switch-light {
     position: relative;
     display: block;
-   
-  
-  
-  }
+   }
     .switch-light::after {
       clear: both;
       content: '';

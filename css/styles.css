@@ -17,11 +17,12 @@ body {
 /* Header section */
 
 header {
-    align-items: center;
     display: flex;
+    align-items: center;
     grid-area: header;
+    height: 40px;
     background-color: rgb(26, 129, 17);
-    /* height: 40px; */
+
 }
 h1 span {
     font-weight: 900;
@@ -70,17 +71,19 @@ nav {
     grid-area: nav;
 }
 
+.nav-svg {
+    fill: white;
+    height: 30px;
+    margin: auto;
+}
+
+
 nav a {
     display: flex;
     height: 100%;
     border: 3px solid transparent;
 }
 
-.nav-svg {
-    fill: white;
-    height: 30px;
-    margin: auto;
-}
 
 
 /* Grid container */
@@ -100,16 +103,17 @@ nav a {
 /* Bell icon */
 
 .bell-icon {
-    border-right: 1px solid rgba(236, 235, 235, 0.5);
+    width: 40px;
+    border-right: 2px solid rgba(236, 235, 235, 0.5);
+    padding-right: 5px;
     fill: #fff;
     height: 1.5em;
-    margin-top: 5px;
-    padding-right: 6px;
-    width: 40px;
+    margin-top: 4px;
 }
 
 
 @keyframes hit {
+    
   
     30% {
         transform: rotate(45deg);
@@ -131,20 +135,20 @@ header > div {
     position: relative;
 }
 
-header > div:hover .bell-icon path {
-    animation: grow 1s ease-out backwards;
-}
 
+.bell-icon path:hover {
+    animation: grow 2s ease-out backwards;
+}
 
 /* Notifications */
 
 #notifications {
     position: absolute;
+    border-radius: 50%;
     right: 5px;
     top: 0;
     height: 5px;
     width: 5px;
-    border-radius: 50%;
     background-color: #53aa66;
 }
 
